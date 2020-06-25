@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BussinessLayer.Interface
+namespace RepositoryLayer.Services
 {
-    public interface IDemo
+    class EmployeeRL
     {
     }
 }
