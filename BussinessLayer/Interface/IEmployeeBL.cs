@@ -1,10 +1,13 @@
-﻿using System;
+﻿using CommonLayer.Models;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BussinessLayer.Interface
 {
     public interface IEmployeeBL
     {
+        EmployeeData AddEmployee(EmployeeData employee);
+        List<EmployeeData> GetAllEmployees();
+        object UpdateData(int empId, EmployeeData update);
+        object DeleteData(int empId);
     }
 }

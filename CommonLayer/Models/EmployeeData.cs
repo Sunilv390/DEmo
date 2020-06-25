@@ -19,6 +19,6 @@ namespace CommonLayer.Models
         public string Email { get; set; }
 
         [Required]
-        public int Contact { get; set; }
+        public string Contact { get; set; }
     }
 }

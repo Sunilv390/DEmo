@@ -1,10 +1,14 @@
-﻿using CommonLayer.DBContext;
+﻿using BussinessLayer.Interface;
+using BussinessLayer.Services;
+using CommonLayer.DBContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RepositoryLayer.Interface;
+using RepositoryLayer.Services;
 
 namespace Demo
 {
@@ -22,6 +26,8 @@ namespace Demo
         {
             services.AddDbContextPool<EmployeeContext>(options => options.UseSqlServer(Configuration["ConnectionString:employeeDb"]));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddScoped<IEmployeeRL,EmployeeRL>();
+            services.AddScoped<IEmployeeBL, EmployeeBL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
