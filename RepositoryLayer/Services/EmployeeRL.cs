@@ -15,6 +15,11 @@ namespace RepositoryLayer.Services
             database = _database;
         }
 
+        /// <summary>
+        /// Add new Employee in which Email should not repeat based on our database
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         public EmployeeData AddEmployee(EmployeeData employee)
         {
             try
@@ -37,6 +42,10 @@ namespace RepositoryLayer.Services
             }
         }
 
+        /// <summary>
+        /// Get all employee details where employeeId shoud be greater than 0
+        /// </summary>
+        /// <returns></returns>
         public List<EmployeeData> GetAllEmployees()
         {
             try
@@ -58,6 +67,12 @@ namespace RepositoryLayer.Services
             }
         }
 
+        /// <summary>
+        /// Update the employee Records based on there empId
+        /// </summary>
+        /// <param name="empId"></param>
+        /// <param name="update"></param>
+        /// <returns></returns>
         public object UpdateData(int empId,EmployeeData update)
         {
             try
@@ -84,6 +99,11 @@ namespace RepositoryLayer.Services
             }
         }
 
+        /// <summary>
+        /// Delete specific Employee Details on the basis of ther ID
+        /// </summary>
+        /// <param name="empId"></param>
+        /// <returns></returns>
         public object DeleteData(int empId)
         {
             try
