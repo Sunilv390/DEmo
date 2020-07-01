@@ -1,6 +1,7 @@
 ﻿using BussinessLayer.Interface;
 using CommonLayer.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 
 namespace Demo.Controllers
@@ -10,10 +11,12 @@ namespace Demo.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeBL empBL;
+        private readonly ILogger logger;
 
-        public EmployeeController(IEmployeeBL _empBL)
+        public EmployeeController(IEmployeeBL _empBL,ILogger<EmployeeController>_logger)
         {
             empBL = _empBL;
+            logger = _logger;
         }
 
         /// <summary>
@@ -31,6 +34,9 @@ namespace Demo.Controllers
                 if (data != null)
                 {
                     message = "All Employee Details";
+
+                    //Getting The Record In the form of Object From Getrecord Method and Storing It into Data variable
+                    logger.LogInformation("Log message");
                     return Ok(new { success, message, data });
                 }
                 else
@@ -65,6 +71,9 @@ namespace Demo.Controllers
                 if (data != null)
                 {
                     message = "Employee Added Successfully";
+
+                    //Getting The Record In the form of Object From Getrecord Method and Storing It into Data variable
+                    logger.LogInformation("Log message");
                     return Ok(new { success, message, data });
                 }
                 else

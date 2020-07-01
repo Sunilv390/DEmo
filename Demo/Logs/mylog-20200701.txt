@@ -1,0 +1,114 @@
+2020-07-01T10:54:23.7459327+05:30 0HM0TFS1SG5GE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee   (ca22a1cb)
+2020-07-01T10:54:23.7459082+05:30 0HM0TFS1SG5GF:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60224/  0 (ca22a1cb)
+2020-07-01T10:54:23.9371159+05:30 0HM0TFS1SG5GF:00000001 [INF] Request finished in 198.3782ms 200  (791a596a)
+2020-07-01T10:54:24.2583308+05:30 0HM0TFS1SG5GE:00000001 [INF] Route matched with "{action = \"GetAllEmployees\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees()" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T10:54:24.5871991+05:30 0HM0TFS1SG5GE:00000001 [INF] Executing action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T10:54:25.0678362+05:30 0HM0TFS1SG5GE:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EmployeeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-07-01T10:54:25.5298767+05:30 0HM0TFS1SG5GE:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [emp].[EmployeeId], [emp].[Name], [emp].[Email], [emp].[Contact]
+FROM [EmployeeDatas] AS [emp]
+WHERE [emp].[EmployeeId] > 0" (0723d8ff)
+2020-07-01T10:54:25.5674685+05:30 0HM0TFS1SG5GE:00000001 [INF] Log message (bb17f00c)
+2020-07-01T10:54:25.5800445+05:30 0HM0TFS1SG5GE:00000001 [INF] Executed action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 980.896ms. (50a9e262)
+2020-07-01T10:54:25.6209799+05:30 0HM0TFS1SG5GE:00000001 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-07-01T10:54:25.7877326+05:30 0HM0TFS1SG5GE:00000001 [INF] Executed action "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" in 1519.4764ms (afa2e885)
+2020-07-01T10:54:25.7989438+05:30 0HM0TFS1SG5GE:00000001 [INF] Request finished in 2074.7827ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T10:54:25.8794272+05:30 0HM0TFS1SG5GF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44321/favicon.ico   (ca22a1cb)
+2020-07-01T10:54:25.8806931+05:30 0HM0TFS1SG5GF:00000002 [INF] Request finished in 1.4699ms 404  (791a596a)
+2020-07-01T10:54:53.4041805+05:30 0HM0TFS1SG5GE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee/AddEmployee   (ca22a1cb)
+2020-07-01T10:54:53.4053414+05:30 0HM0TFS1SG5GE:00000002 [INF] Request finished in 1.1798ms 404  (791a596a)
+2020-07-01T10:56:57.2343910+05:30 0HM0TFTFJE3RS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee   (ca22a1cb)
+2020-07-01T10:56:57.2343895+05:30 0HM0TFTFJE3RR:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60224/  0 (ca22a1cb)
+2020-07-01T10:56:57.3831282+05:30 0HM0TFTFJE3RR:00000001 [INF] Request finished in 147.5486ms 200  (791a596a)
+2020-07-01T10:56:58.1538727+05:30 0HM0TFTFJE3RS:00000001 [INF] Route matched with "{action = \"GetAllEmployees\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees()" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T10:56:58.5568450+05:30 0HM0TFTFJE3RS:00000001 [INF] Executing action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T10:56:59.1556753+05:30 0HM0TFTFJE3RS:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EmployeeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-07-01T10:56:59.8327278+05:30 0HM0TFTFJE3RS:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [emp].[EmployeeId], [emp].[Name], [emp].[Email], [emp].[Contact]
+FROM [EmployeeDatas] AS [emp]
+WHERE [emp].[EmployeeId] > 0" (0723d8ff)
+2020-07-01T10:56:59.8778173+05:30 0HM0TFTFJE3RS:00000001 [INF] Log message (bb17f00c)
+2020-07-01T10:56:59.8912950+05:30 0HM0TFTFJE3RS:00000001 [INF] Executed action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1321.8386ms. (50a9e262)
+2020-07-01T10:56:59.9179537+05:30 0HM0TFTFJE3RS:00000001 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-07-01T10:57:00.1517035+05:30 0HM0TFTFJE3RS:00000001 [INF] Executed action "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" in 1983.8405ms (afa2e885)
+2020-07-01T10:57:00.1792544+05:30 0HM0TFTFJE3RS:00000001 [INF] Request finished in 2965.9169ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T10:57:35.5189337+05:30 0HM0TFTFJE3RR:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44321/api/Employee/AddEmployee application/json 87 (ca22a1cb)
+2020-07-01T10:57:35.5366439+05:30 0HM0TFTFJE3RR:00000002 [INF] Route matched with "{action = \"AddEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(CommonLayer.Models.EmployeeData)" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T10:57:35.5954905+05:30 0HM0TFTFJE3RR:00000002 [INF] Executing action method "Demo.Controllers.EmployeeController.AddEmployee (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T10:57:35.6370009+05:30 0HM0TFTFJE3RR:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__employee_Email_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [exist].[EmployeeId], [exist].[Contact], [exist].[Email], [exist].[Name]
+FROM [EmployeeDatas] AS [exist]
+WHERE [exist].[Email] = @__employee_Email_0" (0723d8ff)
+2020-07-01T10:57:35.9713166+05:30 0HM0TFTFJE3RR:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [EmployeeDatas] ([Contact], [Email], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [EmployeeId]
+FROM [EmployeeDatas]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();" (0723d8ff)
+2020-07-01T10:57:36.0278089+05:30 0HM0TFTFJE3RR:00000002 [INF] Log message (bb17f00c)
+2020-07-01T10:57:36.0285468+05:30 0HM0TFTFJE3RR:00000002 [INF] Executed action method "Demo.Controllers.EmployeeController.AddEmployee (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 432.6248ms. (50a9e262)
+2020-07-01T10:57:36.0298167+05:30 0HM0TFTFJE3RR:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-07-01T10:57:36.0384832+05:30 0HM0TFTFJE3RR:00000002 [INF] Executed action "Demo.Controllers.EmployeeController.AddEmployee (Demo)" in 501.6299ms (afa2e885)
+2020-07-01T10:57:36.0402404+05:30 0HM0TFTFJE3RR:00000002 [INF] Request finished in 521.3426ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T10:58:52.3296175+05:30 0HM0TFTFJE3RT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee   (ca22a1cb)
+2020-07-01T10:58:52.3468162+05:30 0HM0TFTFJE3RT:00000001 [INF] Route matched with "{action = \"GetAllEmployees\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees()" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T10:58:52.3474969+05:30 0HM0TFTFJE3RT:00000001 [INF] Executing action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T10:58:52.3536904+05:30 0HM0TFTFJE3RT:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [emp].[EmployeeId], [emp].[Name], [emp].[Email], [emp].[Contact]
+FROM [EmployeeDatas] AS [emp]
+WHERE [emp].[EmployeeId] > 0" (0723d8ff)
+2020-07-01T10:58:52.3542377+05:30 0HM0TFTFJE3RT:00000001 [INF] Log message (bb17f00c)
+2020-07-01T10:58:52.3546079+05:30 0HM0TFTFJE3RT:00000001 [INF] Executed action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.6551ms. (50a9e262)
+2020-07-01T10:58:52.3551350+05:30 0HM0TFTFJE3RT:00000001 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-07-01T10:58:52.3559718+05:30 0HM0TFTFJE3RT:00000001 [INF] Executed action "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" in 8.8326ms (afa2e885)
+2020-07-01T10:58:52.3567934+05:30 0HM0TFTFJE3RT:00000001 [INF] Request finished in 28.2615ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T11:02:51.1581108+05:30 0HM0TG0P3OKQ8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee   (ca22a1cb)
+2020-07-01T11:02:51.1589309+05:30 0HM0TG0P3OKQ7:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60224/  0 (ca22a1cb)
+2020-07-01T11:02:51.2493804+05:30 0HM0TG0P3OKQ7:00000001 [INF] Request finished in 102.9691ms 200  (791a596a)
+2020-07-01T11:02:51.5740023+05:30 0HM0TG0P3OKQ8:00000001 [INF] Route matched with "{action = \"GetAllEmployees\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees()" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T11:02:51.8372634+05:30 0HM0TG0P3OKQ8:00000001 [INF] Executing action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T11:02:52.1869187+05:30 0HM0TG0P3OKQ8:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EmployeeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-07-01T11:02:52.5836491+05:30 0HM0TG0P3OKQ8:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [emp].[EmployeeId], [emp].[Name], [emp].[Email], [emp].[Contact]
+FROM [EmployeeDatas] AS [emp]
+WHERE [emp].[EmployeeId] > 0" (0723d8ff)
+2020-07-01T11:02:52.6066166+05:30 0HM0TG0P3OKQ8:00000001 [INF] Log message (bb17f00c)
+2020-07-01T11:02:52.6132238+05:30 0HM0TG0P3OKQ8:00000001 [INF] Executed action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 769.885ms. (50a9e262)
+2020-07-01T11:02:52.6265401+05:30 0HM0TG0P3OKQ8:00000001 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-07-01T11:02:52.7026665+05:30 0HM0TG0P3OKQ8:00000001 [INF] Executed action "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" in 1123.6855ms (afa2e885)
+2020-07-01T11:02:52.7092742+05:30 0HM0TG0P3OKQ8:00000001 [INF] Request finished in 1573.7289ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T11:03:04.5150390+05:30 0HM0TG0P3OKQ7:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44321/api/Employee/AddEmployee application/json 91 (ca22a1cb)
+2020-07-01T11:03:04.5357605+05:30 0HM0TG0P3OKQ7:00000002 [INF] Route matched with "{action = \"AddEmployee\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(CommonLayer.Models.EmployeeData)" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T11:03:04.5924288+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executing action method "Demo.Controllers.EmployeeController.AddEmployee (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T11:03:04.6273061+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__employee_Email_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [exist].[EmployeeId], [exist].[Contact], [exist].[Email], [exist].[Name]
+FROM [EmployeeDatas] AS [exist]
+WHERE [exist].[Email] = @__employee_Email_0" (0723d8ff)
+2020-07-01T11:03:04.7745664+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [EmployeeDatas] ([Contact], [Email], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [EmployeeId]
+FROM [EmployeeDatas]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();" (0723d8ff)
+2020-07-01T11:03:04.7961368+05:30 0HM0TG0P3OKQ7:00000002 [INF] Log message (bb17f00c)
+2020-07-01T11:03:04.7963962+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executed action method "Demo.Controllers.EmployeeController.AddEmployee (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 203.7676ms. (50a9e262)
+2020-07-01T11:03:04.7978752+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2020-07-01T11:03:04.8056720+05:30 0HM0TG0P3OKQ7:00000002 [INF] Executed action "Demo.Controllers.EmployeeController.AddEmployee (Demo)" in 269.5452ms (afa2e885)
+2020-07-01T11:03:04.8078877+05:30 0HM0TG0P3OKQ7:00000002 [INF] Request finished in 292.8566ms 200 application/json; charset=utf-8 (791a596a)
+2020-07-01T11:05:08.9613182+05:30 0HM0TG225IMFL:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60224/  0 (ca22a1cb)
+2020-07-01T11:05:08.9613218+05:30 0HM0TG225IMFM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44321/api/Employee   (ca22a1cb)
+2020-07-01T11:05:09.1637223+05:30 0HM0TG225IMFL:00000001 [INF] Request finished in 205.9451ms 200  (791a596a)
+2020-07-01T11:05:09.4038425+05:30 0HM0TG225IMFM:00000001 [INF] Route matched with "{action = \"GetAllEmployees\", controller = \"Employee\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees()" on controller "Demo.Controllers.EmployeeController" ("Demo"). (122b2fdf)
+2020-07-01T11:05:09.7409670+05:30 0HM0TG225IMFM:00000001 [INF] Executing action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" - Validation state: Valid (dad538d7)
+2020-07-01T11:05:10.0777470+05:30 0HM0TG225IMFM:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"EmployeeContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MaxPoolSize=128 " (9958f5bb)
+2020-07-01T11:05:10.3811956+05:30 0HM0TG225IMFM:00000001 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [emp].[EmployeeId], [emp].[Name], [emp].[Email], [emp].[Contact]
+FROM [EmployeeDatas] AS [emp]
+WHERE [emp].[EmployeeId] > 0" (0723d8ff)
+2020-07-01T11:05:10.4098108+05:30 0HM0TG225IMFM:00000001 [INF] Log message (bb17f00c)
+2020-07-01T11:05:10.4191252+05:30 0HM0TG225IMFM:00000001 [INF] Executed action method "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 669.7207ms. (50a9e262)
+2020-07-01T11:05:10.4379816+05:30 0HM0TG225IMFM:00000001 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[CommonLayer.Models.EmployeeData, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2020-07-01T11:05:10.5470099+05:30 0HM0TG225IMFM:00000001 [INF] Executed action "Demo.Controllers.EmployeeController.GetAllEmployees (Demo)" in 1138.2644ms (afa2e885)
+2020-07-01T11:05:10.5530973+05:30 0HM0TG225IMFM:00000001 [INF] Request finished in 1617.6999ms 200 application/json; charset=utf-8 (791a596a)
